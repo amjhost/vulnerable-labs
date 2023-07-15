@@ -52,4 +52,4 @@ By using this lab environment, you accept full responsibility for any actions ta
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [GNU License](LICENSE).
