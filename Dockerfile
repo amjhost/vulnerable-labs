@@ -3,7 +3,7 @@ FROM ubuntu:latest
 
 # Update and install necessary packages
 RUN apt-get update && \
-    apt-get install -y wget curl git python3 python3-pip
+    apt-get install -y wget curl git python3 python3-pip npm
 
 # Install vulnerable applications
 RUN git clone https://github.com/OWASP/NodeGoat.git /opt/nodegoat && \
@@ -29,5 +29,5 @@ EXPOSE 3000 4000 8080 80 81 8081 4001 8000 9000
 WORKDIR /opt
 
 # Default command to run the lab
-CMD ["bash"]
+CMD [ "npm", "start" ]
 
